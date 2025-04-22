@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home';
+import Transactions from './pages/Transactions';
+import About from './pages/About';
+import NotFound from './pages/NotFound';
+import Navigation from './components/Navigation';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      {/* A <BrowserRouter></BrowserRouter> stores the current location in the browser's address bar using clean URLs and navigates the browser's built-in history stack */}
+        
+          {/* Rendered anywhere in the application. <Routes></Routes> will match a set of child routes from the current location */}
+          
+            {/* Route - most important part of react-router. They couple URL segments to components/pages, data loading and data mutations. Through route nesting, complex layouts and data dependencies become simple and declarative */}
+            
+         
+        
     </div>
   );
 }
